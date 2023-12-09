@@ -27,7 +27,7 @@ namespace BlazorMovieLive.Services
 
 		public Task<MovieDetails?> GetMovieDetailsAsync(int id)
 		{
-			return _httpClient.GetFromJsonAsync<MovieDetails>("movie/{id}");
+			return _httpClient.GetFromJsonAsync<MovieDetails>($"movie/{id}");
 		}
 
 

@@ -11,7 +11,7 @@ namespace BlazorMovieLive.Models
 		public string? BackdropPath { get; set; }
 
 		[JsonPropertyName("belongs_to_collection")]
-		public string? BelongsToCollection { get; set; }
+		public MovieCollection? BelongsToCollection { get; set; }
 
 		[JsonPropertyName("budget")]
 		public int Budget { get; set; }
@@ -59,7 +59,7 @@ namespace BlazorMovieLive.Models
 		public int Runtime { get; set; }
 
 		[JsonPropertyName("spoken_languages")]
-		public SpokenLanguages[] SpokenLanguages { get; set; }
+		public SpokenLanguages[] SpokenLanguages { get; set; } = [];
 
 		[JsonPropertyName("status")]
 		public string? Status { get; set; }
@@ -131,6 +131,22 @@ namespace BlazorMovieLive.Models
 		[JsonPropertyName("name")]
 		public string? Name { get; set; }
 	
+	}
+
+
+	public class MovieCollection
+	{
+		[JsonPropertyName("id")]
+		public int Id { get; set; }
+
+		[JsonPropertyName("name")]
+		public string? Name { get; set; }
+
+		[JsonPropertyName("poster_path")]
+		public string? PosterPath { get; set; }
+
+		[JsonPropertyName("backdrop_path")]
+		public string? BackdropPath { get; set; }
 	}
 
 }

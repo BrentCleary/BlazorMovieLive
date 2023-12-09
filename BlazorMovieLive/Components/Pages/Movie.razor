@@ -3,7 +3,15 @@
 
 <h3>Movie</h3>
 
-@(movieDetails is null)
+@if(movieDetails is null)
+{
+	<p><em>Loading...</em></p>
+}
+else
+{
+	<h1>@movieDetails.Title</h1>
+	<p>@movieDetails.Overview</p>
+}
 
 <p>Movie Id is @Id</p>
 
