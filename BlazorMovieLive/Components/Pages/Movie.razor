@@ -67,11 +67,9 @@ else
 		</div>
 	</div>
 	<div class="container-xxl">
-		<div class="overview">
+		<div class="overview d-flex flex-column">
 			<p>@movieDetails.Overview</p>
-		</div>
-		<div>
-			@if(movieDetails.SpokenLanguages.Any())
+			@if (movieDetails.SpokenLanguages.Any())
 			{
 				<div>
 					Languages: @string.Join(", ", movieDetails.SpokenLanguages.Select(sl => sl.EnglishName))
@@ -82,8 +80,6 @@ else
 	</div>
 
 }
-
-<p>Movie Id is @Id</p>
 
 @code {
 

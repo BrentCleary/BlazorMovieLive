@@ -30,3 +30,14 @@
     max-height: 100%;
     object-fit: cover;
 }
+
+.overview{
+    margin-top: 12rem;
+}
+
+@media (min-width: 992px){
+    .overview {
+        margin-left: calc((24rem * .666) + 4rem);
+        margin-top: 2rem;
+    }
+}
