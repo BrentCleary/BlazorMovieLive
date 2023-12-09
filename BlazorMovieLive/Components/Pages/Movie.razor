@@ -1,7 +1,6 @@
 ﻿@page "/movie/{id:int}"
 @inject TMDBClient TMDB
 
-<h3>Movie</h3>
 
 @if(movieDetails is null)
 {
@@ -9,6 +8,16 @@
 }
 else
 {
+	<PageTitle>@movieDetails.Title</PageTitle>
+
+	<!--Page Banner -->
+	<div class="hero-bg" style="@($"--bg-img: url(https://image/tmdb.org/t/p/original/{movieDetails.BackdropPath})")">
+		<div class="hero-container">
+
+		</div>
+	</div>
+
+
 	<h1>@movieDetails.Title</h1>
 	<p>@movieDetails.Overview</p>
 }
