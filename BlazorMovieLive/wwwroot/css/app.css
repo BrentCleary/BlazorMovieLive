@@ -2,18 +2,12 @@
     /* fonts */
     --cf-title-font: 'Bebas Neue', sans-serif;
     --cf-body-font: 'Monsterrat', sans-serif;
-
     /* colors */
     --cf-dark-color: #212121;
-    --cf-title-color: $deeefb;
-
+    --cf-light-color: #deeefb;
     /* text styles */
     --cf-title-color: var(--cf-dark-color);
     --cf-font-size: 1rem;
-
-
-
-
 }
 
 html, body {
@@ -22,21 +16,17 @@ html, body {
     height: 100%;
 }
 
-
 #app {
     height: 100%;
 }
 
-
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     font-family: var(--cf-title-font);
-    color: var(--cf-title-color);
 }
 
-h1:focus {
-    outline: none;
-}
-
+    h1:focus {
+        outline: none;
+    }
 
 /* #region Blazor Default Styles */
 .valid.modified:not([type=checkbox]) {
@@ -118,5 +108,3 @@ code {
 }
 
 /* #endregion Blazor Default Styles */
-
-

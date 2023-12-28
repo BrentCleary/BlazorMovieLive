@@ -1,8 +1,8 @@
-﻿.navStyle{
-    background-color: var(--cf-theme-900);
-
+﻿.navStyle {
+    /* background-color: var(--cf-theme-900); */
+    background-color: midnightblue;
 }
 
-navbar-nav{
+.navbar-nav {
     --bs-navbar-hover-color: var(--cf-theme-400);
 }
