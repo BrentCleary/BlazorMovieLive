@@ -1,6 +1,6 @@
 ﻿.navStyle {
-    /* background-color: var(--cf-theme-900); */
-    background-color: midnightblue;
+    background-color: var(--cf-theme-900);
+    /*background-color: midnightblue;*/
 }
 
 .navbar-nav {
